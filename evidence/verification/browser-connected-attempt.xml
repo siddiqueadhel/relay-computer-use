@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="6" time="14.088" timestamp="2026-09-19T19:25:05.483392-07:00" hostname="Adhels-MacBook.local"><testcase classname="tests.test_bank" name="test_fixture_serves_browser_forms_without_business_api[12345-Search results]" time="0.199" /><testcase classname="tests.test_bank" name="test_fixture_serves_browser_forms_without_business_api[99999-Member not found]" time="0.043" /><testcase classname="tests.test_bank" name="test_session_restoration_preserves_member_and_review_escapes_input" time="0.035" /><testcase classname="tests.test_browser" name="test_real_ui_outcomes[normal-changes0-success-completed]" time="8.953"><failure message="AssertionError: assert ('failure', '..._destination') == ('success', 'completed')&#10;  &#10;  At index 0 diff: 'failure' != 'success'&#10;  Use -v to get more diff">tests/test_browser.py:32: in test_real_ui_outcomes
+    assert (result.status, result.code) == (status, code)
+E   AssertionError: assert ('failure', '..._destination') == ('success', 'completed')
+E     
+E     At index 0 diff: 'failure' != 'success'
+E     Use -v to get more diff</failure></testcase><testcase classname="tests.test_browser" name="test_real_ui_outcomes[normal-changes1-business_outcome-member_not_found]" time="2.654"><failure message="AssertionError: assert ('failure', '..._destination') == ('business_ou...er_not_found')&#10;  &#10;  At index 0 diff: 'failure' != 'business_outcome'&#10;  Use -v to get more diff">tests/test_browser.py:32: in test_real_ui_outcomes
+    assert (result.status, result.code) == (status, code)
+E   AssertionError: assert ('failure', '..._destination') == ('business_ou...er_not_found')
+E     
+E     At index 0 diff: 'failure' != 'business_outcome'
+E     Use -v to get more diff</failure></testcase><testcase classname="tests.test_browser" name="test_real_ui_outcomes[normal-changes2-business_outcome-validation_error]" time="1.521"><failure message="AssertionError: assert ('failure', '..._destination') == ('business_ou...dation_error')&#10;  &#10;  At index 0 diff: 'failure' != 'business_outcome'&#10;  Use -v to get more diff">tests/test_browser.py:32: in test_real_ui_outcomes
+    assert (result.status, result.code) == (status, code)
+E   AssertionError: assert ('failure', '..._destination') == ('business_ou...dation_error')
+E     
+E     At index 0 diff: 'failure' != 'business_outcome'
+E     Use -v to get more diff</failure></testcase></testsuite></testsuites>

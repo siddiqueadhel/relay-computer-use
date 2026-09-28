@@ -1,0 +1,11 @@
+{"seq": 0, "elapsed_ms": 0, "event": "run_started", "mode": "replay", "evidence_policy": "redacted; no raw model transcript"}
+{"seq": 1, "elapsed_ms": 477, "event": "session_started", "session_id": "b7d2c5ed883147eaab1f510631712c48", "surface": "playwright_chromium", "viewport": "1360x960"}
+{"seq": 2, "elapsed_ms": 479, "event": "capability_loaded", "name": "prepare_subaccount", "version": "1.0.0", "sha256": "77438789bf04e1ff4b9eb2bbdd403facd131bfc9b5b4dab24328fbe8e50d969b", "schema_version": "1.0", "input_fields": ["account_type", "member_id", "nickname"], "model_calls": 0}
+{"seq": 3, "elapsed_ms": 479, "event": "step_started", "step_id": "step_00", "action": {"kind": "navigate", "target": null, "value": null, "path": "/"}, "rationale": "Open the configured app."}
+{"seq": 4, "elapsed_ms": 634, "event": "step_completed", "step_id": "step_00", "by": "automation"}
+{"seq": 5, "elapsed_ms": 634, "event": "step_started", "step_id": "step_01", "action": {"kind": "fill", "target": {"frame_path": ["workspace"], "candidates": [{"by": "role", "name": "Member number", "role": "textbox", "control": null}]}, "value": {"source": "input", "value": "member_id"}, "path": null}, "rationale": "Bind the member parameter."}
+{"seq": 6, "elapsed_ms": 794, "event": "step_completed", "step_id": "step_01", "by": "automation"}
+{"seq": 7, "elapsed_ms": 794, "event": "step_started", "step_id": "step_02", "action": {"kind": "click", "target": {"frame_path": ["workspace"], "candidates": [{"by": "role", "name": "Search", "role": "button", "control": null}]}, "value": null, "path": null}, "rationale": "Find the requested relationship."}
+{"seq": 8, "elapsed_ms": 833, "event": "action_incomplete", "step_id": "step_02", "code": "ambiguous_target"}
+{"seq": 9, "elapsed_ms": 952, "event": "evidence_saved", "snapshot": "stopped.json", "screenshot": "stopped.png"}
+{"seq": 10, "elapsed_ms": 484, "event": "run_finished", "status": "failure", "code": "ambiguous_target", "outputs": {}, "step_id": "step_02", "expected": "[{\"kind\": \"visible\", \"target\": {\"frame_path\": [\"workspace\"], \"candidates\": [{\"by\": \"role\", \"name\": \"Search results\", \"role\": \"heading\", \"control\": null}]}, \"expected\": null}]", "observed": "Find a member", "evidence": "stopped.png", "model_calls": 0, "recoveries": 0, "handoffs": 0}

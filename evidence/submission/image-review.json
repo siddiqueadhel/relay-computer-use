@@ -1,0 +1,219 @@
+{
+  "review_date": "2026-09-21",
+  "reviewer": "coding_assistant",
+  "method": "Viewed every distinct PNG with the image inspection tool; byte-identical files grouped by SHA-256.",
+  "total_files": 88,
+  "distinct_images": 20,
+  "observed_result": "Private full names, member numbers and account names were masked where present; no exposed credentials or full private values observed. Synthetic first-letter avatars and product names remain intentionally visible.",
+  "limitations": "Visual inspection is not proof against hidden image metadata, steganography, unknown sensitive categories, or later modifications. Applies only to these exact hashes.",
+  "groups": [
+    {
+      "sha256": "f74cb8966bd0eaa1cc23d90ccf1e1cf01e9b9717365031a4c227bbc5f1148709",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022709-6fd33589/stopped.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022709-6fd33589/stopped.png",
+        "evidence/manual/replay-20260919T210932-0304117d/stopped.png",
+        "evidence/verification/guarded-authored/replay-20260919T204749-4b59d9ae/stopped.png"
+      ]
+    },
+    {
+      "sha256": "1ce74eea563e642fc84db50c72d19bbfe8ff4dfab4c655e35d3dc71d16743a8e",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022619-e4ac307c/completed.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022619-e4ac307c/completed.png",
+        "evidence/submission/replay/replay-20260920T022643-7e4da9a7/completed.png",
+        "evidence/submission/replay/replay-20260920T022459-12e0a021/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204720-44c058c2/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204711-e3db550f/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204729-b101eb25/completed.png"
+      ]
+    },
+    {
+      "sha256": "4aa3c85c83a9a2a1bb7c927982062b99d5baa8c9b14d251b1b9f755618c0f8cd",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022701-5a049d45/stopped.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022701-5a049d45/stopped.png",
+        "evidence/manual/replay-20260919T210735-8d383847/stopped.png",
+        "evidence/verification/guarded-authored/replay-20260919T204739-d3f2c99f/stopped.png"
+      ]
+    },
+    {
+      "sha256": "6137ddd023cce2f8e78bedffd4073aeecd26887e59689f09eb60e3806631d760",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022658-2d8a34e7/stopped.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022658-2d8a34e7/stopped.png",
+        "evidence/manual/replay-20260919T210617-b8f6b8cb/stopped.png",
+        "evidence/verification/guarded-authored/replay-20260919T204733-9d66183d/stopped.png"
+      ]
+    },
+    {
+      "sha256": "7d6b088d889b1dd1f2661db303f6612d93cb6e91bed7974743c56e3d75f2516a",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022448-ae5baee4/completed.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022448-ae5baee4/completed.png",
+        "evidence/submission/replay/replay-20260920T022550-bb3f3345/completed.png",
+        "evidence/submission/replay/replay-20260920T022636-e1760c0d/completed.png",
+        "evidence/submission/discovery/discover-20260920T021923-38965d88/completed.png",
+        "evidence/submission/discovery/discover-20260920T021420-e90e44b7/stopped.png",
+        "evidence/verification/guarded-authored/replay-20260919T204726-67a17017/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204717-1fac1bdf/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204708-147466a1/completed.png"
+      ]
+    },
+    {
+      "sha256": "964b30a93400fe8a070ed0e2d7999ee97b5d8dbc400380e4873126bafe14df0a",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022455-533d9484/completed.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022455-533d9484/completed.png",
+        "evidence/submission/replay/replay-20260920T022721-00227f88/completed.png",
+        "evidence/submission/replay/replay-20260920T022718-3e8efe68/completed.png",
+        "evidence/submission/replay/replay-20260920T022601-36635c6b/completed.png",
+        "evidence/submission/replay/replay-20260920T022704-407feb84/completed.png",
+        "evidence/submission/replay/replay-20260920T022707-0aae2add/completed.png",
+        "evidence/submission/replay/replay-20260920T022639-86b40857/completed.png",
+        "evidence/verification/browser-smoke/replay-20260919T193118-050929c3/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204719-9b593e60/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204745-52334437/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204727-2b1ba54b/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204710-9b948223/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204755-6ae5c619/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204748-f5c768ba/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204753-c46e20a3/completed.png"
+      ]
+    },
+    {
+      "sha256": "ff4a9c58efcf2d27f44dc370f4cbb2dbd2921b77675ed539304b2db6d864d942",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022721-00227f88/intervention-1.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022721-00227f88/intervention-1.png",
+        "evidence/verification/guarded-authored/replay-20260919T204755-6ae5c619/intervention-1.png"
+      ]
+    },
+    {
+      "sha256": "60cdfec979d61906e0e195f69387c4590be903499c39af58b5a702d06759b60f",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022721-00227f88/resumed-1.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022721-00227f88/resumed-1.png",
+        "evidence/verification/guarded-authored/replay-20260919T204755-6ae5c619/resumed-1.png"
+      ]
+    },
+    {
+      "sha256": "7fd92e3cc415f263e3dfa613cf0d47fcd615f8b45103c0fc04a87043409f575b",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022713-8ae11196/stopped.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022713-8ae11196/stopped.png",
+        "evidence/verification/guarded-authored/replay-20260919T204750-2c38ea2a/stopped.png"
+      ]
+    },
+    {
+      "sha256": "d5c5e7f8dad04c5765ffc1460f0ec3ed136109df3be4aa0aec9e87a539f71038",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022653-068b741d/completed.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022653-068b741d/completed.png",
+        "evidence/submission/replay/replay-20260920T022631-d4bc8ad9/completed.png",
+        "evidence/submission/replay/replay-20260920T022527-0961e8bd/completed.png",
+        "evidence/submission/replay/replay-20260920T022437-03cadc67/completed.png",
+        "evidence/manual/replay-20260919T210417-e8a0d9d4/completed.png",
+        "evidence/submission/handoff/replay-20260920T030051-f8c6611b/completed.png",
+        "evidence/manual/replay-20260919T210840-c97b627c/completed.png",
+        "evidence/verification/cua-handoff/replay-20260919T211609-508a9655/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204705-1968db9c/completed.png",
+        "evidence/submission/handoff/replay-20260920T024943-b43e21a4/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204723-a94d724c/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204714-2598b6ed/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204731-14ce348b/completed.png"
+      ]
+    },
+    {
+      "sha256": "6508dfe5c0fcbec694ed6b5d546abadd3349bdffe6a14f348f3a192a4e70400d",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022648-d55c0e76/completed.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022648-d55c0e76/completed.png",
+        "evidence/submission/replay/replay-20260920T022627-453db86f/completed.png",
+        "evidence/submission/replay/replay-20260920T022503-c05b10d9/completed.png",
+        "evidence/submission/replay/replay-20260920T022432-754b2601/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204701-0960369d/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204730-230b793a/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204713-f8ac970e/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204722-eda4a4a3/completed.png"
+      ]
+    },
+    {
+      "sha256": "44cff48d4e2d650dac03c858ae85932e44ebeee43805239a1ea72c59b0cc98a3",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022718-3e8efe68/intervention-1.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022718-3e8efe68/intervention-1.png",
+        "evidence/submission/handoff/replay-20260920T030051-f8c6611b/intervention-1.png",
+        "evidence/verification/cua-handoff/replay-20260919T211609-508a9655/intervention-1.png",
+        "evidence/submission/handoff/replay-20260920T024943-b43e21a4/intervention-1.png",
+        "evidence/verification/guarded-authored/replay-20260919T204753-c46e20a3/intervention-1.png"
+      ]
+    },
+    {
+      "sha256": "90b096382b1747c54c9f1c2f85c50c92abd8a10380c84b5334101bbb8dc7d1c6",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022718-3e8efe68/resumed-1.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022718-3e8efe68/resumed-1.png",
+        "evidence/submission/handoff/replay-20260920T030051-f8c6611b/resumed-1.png",
+        "evidence/submission/handoff/replay-20260920T024943-b43e21a4/resumed-1.png",
+        "evidence/verification/guarded-authored/replay-20260919T204753-c46e20a3/resumed-1.png"
+      ]
+    },
+    {
+      "sha256": "f916cdfafffdc76086c29bdd17fd579930eba35428aa0155a29b05a0801a4a11",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022538-6c2414db/completed.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022538-6c2414db/completed.png",
+        "evidence/submission/replay/replay-20260920T022440-12ecf176/completed.png",
+        "evidence/submission/replay/replay-20260920T022633-686a29ca/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204706-6f3ca7d1/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204716-845a8baa/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204724-51cc0805/completed.png"
+      ]
+    },
+    {
+      "sha256": "8d139fd87f83abc60078a26d00313bee1d592ec47f09f60e1ae822656f30cd03",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022726-4d096197/completed.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022726-4d096197/completed.png",
+        "evidence/verification/guarded-authored/replay-20260919T204756-6f3a4c6a/completed.png"
+      ]
+    },
+    {
+      "sha256": "338d76c5ef9af15965c0c86c48b448ae7289bc6de41865b631b46b2b6a7dfa02",
+      "viewed_representative": "evidence/submission/replay/replay-20260920T022715-f6bb0de6/stopped.png",
+      "files": [
+        "evidence/submission/replay/replay-20260920T022715-f6bb0de6/stopped.png",
+        "evidence/verification/guarded-authored/replay-20260919T204751-00388bf7/stopped.png"
+      ]
+    },
+    {
+      "sha256": "49466cd468cea4650f61852f6d5f03ef6a6b4024b46e1f192286c83b35a7d62d",
+      "viewed_representative": "evidence/submission/discovery/discover-20260919T204050-7ebe9c3f/stopped.png",
+      "files": [
+        "evidence/submission/discovery/discover-20260919T204050-7ebe9c3f/stopped.png"
+      ]
+    },
+    {
+      "sha256": "882f73c83cd8c3672f49b27678e1cf3591515469f08080e458ea33f3af1aa19d",
+      "viewed_representative": "evidence/submission/discovery/discover-20260919T204257-49affa9f/stopped.png",
+      "files": [
+        "evidence/submission/discovery/discover-20260919T204257-49affa9f/stopped.png"
+      ]
+    },
+    {
+      "sha256": "1c07736fc9828fc81d32acc3d0386ca55e7f3676d0079617c02bdf8f04078113",
+      "viewed_representative": "evidence/verification/cua-handoff/replay-20260919T211609-508a9655/resumed-1.png",
+      "files": [
+        "evidence/verification/cua-handoff/replay-20260919T211609-508a9655/resumed-1.png"
+      ]
+    },
+    {
+      "sha256": "2686f91dd8ff26cf64572036baaafe08ee0074b5356a6b9bb81759b125d0dc86",
+      "viewed_representative": "evidence/submission/discovery/discover-20260919T215019-1d214e8a/stopped.png",
+      "files": [
+        "evidence/submission/discovery/discover-20260919T215019-1d214e8a/stopped.png"
+      ]
+    }
+  ]
+}

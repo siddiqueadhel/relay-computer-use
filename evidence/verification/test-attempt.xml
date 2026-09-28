@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="2" failures="0" skipped="0" tests="5" time="0.271" timestamp="2026-09-19T14:05:31.864065-07:00" hostname="Adhels-MacBook.local"><testcase classname="tests.test_bank" name="test_fixture_serves_browser_forms_without_business_api[12345-Search results]" time="0.045" /><testcase classname="tests.test_bank" name="test_fixture_serves_browser_forms_without_business_api[99999-Member not found]" time="0.010" /><testcase classname="tests.test_bank" name="test_session_restoration_preserves_member_and_review_escapes_input" time="0.011" /><testcase classname="tests.test_browser" name="test_real_ui_outcomes[normal-changes0-success-completed]" time="0.001"><error message="failed on setup with &quot;PermissionError: [Errno 1] Operation not permitted&quot;">self = &lt;Coroutine test_real_ui_outcomes[normal-changes0-success-completed]&gt;
+
+    def setup(self) -&gt; None:
+        runner_fixture_id = f"_{self._loop_scope}_scoped_runner"
+        if runner_fixture_id not in self.fixturenames:
+            self.fixturenames.append(runner_fixture_id)
+        # When loop factories are configured, resolve the loop factory
+        # fixture early so that a factory variant change cascades cache
+        # invalidation before any async fixture checks its cache.
+        hook_caller = self.config.hook.pytest_asyncio_loop_factories
+        if hook_caller.get_hookimpls():
+            _ = self._request.getfixturevalue(_asyncio_loop_factory.__name__)
+&gt;       return super().setup()
+               ^^^^^^^^^^^^^^^
+
+../../work/venv/lib/python3.12/site-packages/pytest_asyncio/plugin.py:558: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../work/venv/lib/python3.12/site-packages/pytest_asyncio/plugin.py:926: in pytest_fixture_setup
+    return (yield)
+            ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @pytest.fixture
+    def unused_port():
+        with socket.socket() as sock:
+&gt;           sock.bind(("127.0.0.1", 0))
+E           PermissionError: [Errno 1] Operation not permitted
+
+tests/conftest.py:13: PermissionError</error></testcase><testcase classname="tests.test_browser" name="test_real_ui_outcomes[normal-changes1-business_outcome-member_not_found]" time="0.001"><error message="failed on setup with &quot;PermissionError: [Errno 1] Operation not permitted&quot;">self = &lt;Coroutine test_real_ui_outcomes[normal-changes1-business_outcome-member_not_found]&gt;
+
+    def setup(self) -&gt; None:
+        runner_fixture_id = f"_{self._loop_scope}_scoped_runner"
+        if runner_fixture_id not in self.fixturenames:
+            self.fixturenames.append(runner_fixture_id)
+        # When loop factories are configured, resolve the loop factory
+        # fixture early so that a factory variant change cascades cache
+        # invalidation before any async fixture checks its cache.
+        hook_caller = self.config.hook.pytest_asyncio_loop_factories
+        if hook_caller.get_hookimpls():
+            _ = self._request.getfixturevalue(_asyncio_loop_factory.__name__)
+&gt;       return super().setup()
+               ^^^^^^^^^^^^^^^
+
+../../work/venv/lib/python3.12/site-packages/pytest_asyncio/plugin.py:558: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../work/venv/lib/python3.12/site-packages/pytest_asyncio/plugin.py:926: in pytest_fixture_setup
+    return (yield)
+            ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @pytest.fixture
+    def unused_port():
+        with socket.socket() as sock:
+&gt;           sock.bind(("127.0.0.1", 0))
+E           PermissionError: [Errno 1] Operation not permitted
+
+tests/conftest.py:13: PermissionError</error></testcase></testsuite></testsuites>

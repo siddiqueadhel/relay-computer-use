@@ -1,0 +1,645 @@
+{
+  "artifact_sha256": "77438789bf04e1ff4b9eb2bbdd403facd131bfc9b5b4dab24328fbe8e50d969b",
+  "artifact_provenance": "authored_example",
+  "discovery_evidence_present": false,
+  "manual_human_demonstration": false,
+  "scope": "Synthetic local fixture. Not an independent benchmark or production reliability estimate.",
+  "guard": {
+    "model_credentials_removed": true,
+    "python_network": "loopback only",
+    "browser_network": "surface request allowlist",
+    "blocked_model_imports": 0,
+    "blocked_nonlocal_connections": 0
+  },
+  "passed": true,
+  "cases_passed": 31,
+  "cases_total": 31,
+  "stability": {
+    "passed": 20,
+    "runs": 20,
+    "median_workflow_ms": 1006.5,
+    "max_workflow_ms": 1453
+  },
+  "cases": [
+    {
+      "case": "stability_01",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204701-0960369d",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1402,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204701-0960369d"
+    },
+    {
+      "case": "stability_02",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204705-1968db9c",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 960,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204705-1968db9c"
+    },
+    {
+      "case": "stability_03",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204706-6f3ca7d1",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1453,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204706-6f3ca7d1"
+    },
+    {
+      "case": "stability_04",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204708-147466a1",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1020,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204708-147466a1"
+    },
+    {
+      "case": "stability_05",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204710-9b948223",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1087,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204710-9b948223"
+    },
+    {
+      "case": "stability_06",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204711-e3db550f",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1136,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204711-e3db550f"
+    },
+    {
+      "case": "stability_07",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204713-f8ac970e",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1007,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204713-f8ac970e"
+    },
+    {
+      "case": "stability_08",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204714-2598b6ed",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1130,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204714-2598b6ed"
+    },
+    {
+      "case": "stability_09",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204716-845a8baa",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 992,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204716-845a8baa"
+    },
+    {
+      "case": "stability_10",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204717-1fac1bdf",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 956,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204717-1fac1bdf"
+    },
+    {
+      "case": "stability_11",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204719-9b593e60",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1009,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204719-9b593e60"
+    },
+    {
+      "case": "stability_12",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204720-44c058c2",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1010,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204720-44c058c2"
+    },
+    {
+      "case": "stability_13",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204722-eda4a4a3",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1006,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204722-eda4a4a3"
+    },
+    {
+      "case": "stability_14",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204723-a94d724c",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 990,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204723-a94d724c"
+    },
+    {
+      "case": "stability_15",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204724-51cc0805",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1006,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204724-51cc0805"
+    },
+    {
+      "case": "stability_16",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204726-67a17017",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 989,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204726-67a17017"
+    },
+    {
+      "case": "stability_17",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204727-2b1ba54b",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1009,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204727-2b1ba54b"
+    },
+    {
+      "case": "stability_18",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204729-b101eb25",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 972,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204729-b101eb25"
+    },
+    {
+      "case": "stability_19",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204730-230b793a",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 940,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204730-230b793a"
+    },
+    {
+      "case": "stability_20",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204731-14ce348b",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 959,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204731-14ce348b"
+    },
+    {
+      "case": "not_found",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "business_outcome",
+        "member_not_found"
+      ],
+      "status": "business_outcome",
+      "code": "member_not_found",
+      "run_id": "replay-20260919T204733-9d66183d",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 5574,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204733-9d66183d"
+    },
+    {
+      "case": "validation",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "business_outcome",
+        "validation_error"
+      ],
+      "status": "business_outcome",
+      "code": "validation_error",
+      "run_id": "replay-20260919T204739-d3f2c99f",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 6166,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204739-d3f2c99f"
+    },
+    {
+      "case": "slow",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204745-52334437",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 2046,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204745-52334437"
+    },
+    {
+      "case": "known_notice",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204748-f5c768ba",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 958,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204748-f5c768ba"
+    },
+    {
+      "case": "permission_denied",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "failure",
+        "permission_denied"
+      ],
+      "status": "failure",
+      "code": "permission_denied",
+      "run_id": "replay-20260919T204749-4b59d9ae",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 652,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204749-4b59d9ae"
+    },
+    {
+      "case": "app_error",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "failure",
+        "app_unavailable"
+      ],
+      "status": "failure",
+      "code": "app_unavailable",
+      "run_id": "replay-20260919T204750-2c38ea2a",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 553,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204750-2c38ea2a"
+    },
+    {
+      "case": "ambiguous",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "failure",
+        "ambiguous_target"
+      ],
+      "status": "failure",
+      "code": "ambiguous_target",
+      "run_id": "replay-20260919T204751-00388bf7",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 484,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204751-00388bf7"
+    },
+    {
+      "case": "forbidden_redirect",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "failure",
+        "origin_denied"
+      ],
+      "status": "failure",
+      "code": "origin_denied",
+      "run_id": "replay-20260919T204752-b0f886d6",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 342,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204752-b0f886d6"
+    },
+    {
+      "case": "session_handoff",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204753-c46e20a3",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1173,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": true,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204753-c46e20a3"
+    },
+    {
+      "case": "unknown_dialog_handoff",
+      "variant": "base",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204755-6ae5c619",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1278,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": true,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204755-6ae5c619"
+    },
+    {
+      "case": "harbor_variant",
+      "variant": "harbor",
+      "passed": true,
+      "expected": [
+        "success",
+        "completed"
+      ],
+      "status": "success",
+      "code": "completed",
+      "run_id": "replay-20260919T204756-6f3a4c6a",
+      "model_calls": 0,
+      "workflow_elapsed_ms": 1078,
+      "outputs_match_inputs": true,
+      "new_fixture_sessions": 1,
+      "irreversible_commits": 0,
+      "simulated_operator": false,
+      "handoff_verified": true,
+      "evidence": "replay-20260919T204756-6f3a4c6a"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "run_id": "replay-20260920T022713-8ae11196",
+  "status": "failure",
+  "code": "app_unavailable",
+  "outputs": {},
+  "step_id": "step_02",
+  "expected": "[{\"kind\": \"visible\", \"target\": {\"frame_path\": [\"workspace\"], \"candidates\": [{\"by\": \"role\", \"name\": \"Search results\", \"role\": \"heading\", \"control\": null}]}, \"expected\": null}]",
+  "observed": "Service unavailable",
+  "evidence": "stopped.png",
+  "model_calls": 0,
+  "recoveries": 0,
+  "handoffs": 0,
+  "elapsed_ms": 778
+}

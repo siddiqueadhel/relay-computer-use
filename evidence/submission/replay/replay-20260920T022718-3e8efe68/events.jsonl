@@ -1,0 +1,31 @@
+{"mode": "replay", "evidence_policy": "redacted; no raw model transcript", "seq": 0, "elapsed_ms": 0, "event": "run_started"}
+{"session_id": "1e58ea66f9e846b79c84d13d01ad8f98", "surface": "playwright_chromium", "viewport": "1360x960", "seq": 1, "elapsed_ms": 579, "event": "session_started"}
+{"name": "prepare_subaccount", "version": "1.0.0", "sha256": "268739182ed583bcbf9fb8f03789efa1e8a7fe8d1c60d35108761301ce2eaca3", "schema_version": "1.0", "input_fields": ["account_type", "member_id", "nickname"], "model_calls": 0, "seq": 2, "elapsed_ms": 581, "event": "capability_loaded"}
+{"step_id": "step_00", "action": {"kind": "navigate", "target": null, "value": null, "path": "/"}, "rationale": "Open the configured application entry point.", "seq": 3, "elapsed_ms": 582, "event": "step_started"}
+{"step_id": "step_00", "by": "automation", "seq": 4, "elapsed_ms": 738, "event": "step_completed"}
+{"step_id": "step_01", "action": {"kind": "fill", "target": {"frame_path": ["workspace"], "candidates": [{"by": "label", "name": "Member number", "role": null, "control": "input"}]}, "value": {"source": "input", "value": "member_id"}, "path": null}, "rationale": "Enter the supplied member number to begin the member lookup.", "seq": 5, "elapsed_ms": 738, "event": "step_started"}
+{"step_id": "step_01", "by": "automation", "seq": 6, "elapsed_ms": 907, "event": "step_completed"}
+{"step_id": "step_02", "action": {"kind": "click", "target": {"frame_path": ["workspace"], "candidates": [{"by": "role", "name": "Search", "role": "button", "control": "button"}]}, "value": null, "path": null}, "rationale": "Search for the supplied member.", "seq": 7, "elapsed_ms": 908, "event": "step_started"}
+{"step_id": "step_02", "by": "automation", "seq": 8, "elapsed_ms": 1154, "event": "step_completed"}
+{"step_id": "step_03", "action": {"kind": "click", "target": {"frame_path": ["workspace"], "candidates": [{"by": "role", "name": "Open member", "role": "link", "control": null}]}, "value": null, "path": null}, "rationale": "Open the single matching member result.", "seq": 9, "elapsed_ms": 1155, "event": "step_started"}
+{"step_id": "step_03", "by": "automation", "seq": 10, "elapsed_ms": 1396, "event": "step_completed"}
+{"step_id": "step_04", "action": {"kind": "click", "target": {"frame_path": ["workspace"], "candidates": [{"by": "role", "name": "Add sub-account", "role": "link", "control": null}]}, "value": null, "path": null}, "rationale": "Open the sub-account preparation form for the verified member.", "seq": 11, "elapsed_ms": 1397, "event": "step_started"}
+{"step_id": "step_04", "code": "session_expired", "disposition": "intervene", "seq": 12, "elapsed_ms": 1640, "event": "condition_detected"}
+{"snapshot": "intervention-1.json", "screenshot": "intervention-1.png", "seq": 13, "elapsed_ms": 1725, "event": "evidence_saved"}
+{"session_id": "1e58ea66f9e846b79c84d13d01ad8f98", "generation": 1, "reason": "session_expired", "step_id": "step_04", "expected": "Restore the interrupted step's before or after checkpoint.", "evidence": "intervention-1.png", "seq": 14, "elapsed_ms": 1725, "event": "intervention_requested"}
+{"note": "Automated test driver, not a real human.", "seq": 15, "elapsed_ms": 1749, "event": "operator_simulation"}
+{"owner": "human", "session_id": "1e58ea66f9e846b79c84d13d01ad8f98", "generation": 1, "seq": 16, "elapsed_ms": 1749, "event": "control_transferred"}
+{"session_id": "1e58ea66f9e846b79c84d13d01ad8f98", "generation": 1, "kind": "click", "origin": "browser_event", "control": "Resume staff session", "values": "not recorded", "seq": 17, "elapsed_ms": 1808, "event": "human_action"}
+{"session_id": "1e58ea66f9e846b79c84d13d01ad8f98", "generation": 1, "kind": "click", "control": "Resume staff session", "origin": "operator_command", "values": "not recorded", "seq": 18, "elapsed_ms": 1837, "event": "human_action"}
+{"owner": "automation", "session_id": "1e58ea66f9e846b79c84d13d01ad8f98", "generation": 1, "seq": 19, "elapsed_ms": 1837, "event": "control_transferred"}
+{"snapshot": "resumed-1.json", "screenshot": "resumed-1.png", "seq": 20, "elapsed_ms": 1963, "event": "evidence_saved"}
+{"step_id": "step_04", "checkpoint": "after", "seq": 21, "elapsed_ms": 1972, "event": "resume_verified"}
+{"step_id": "step_04", "by": "operator", "seq": 22, "elapsed_ms": 1978, "event": "step_completed"}
+{"step_id": "step_05", "action": {"kind": "select", "target": {"frame_path": ["workspace"], "candidates": [{"by": "row", "name": "Account type", "role": null, "control": "select"}]}, "value": {"source": "input", "value": "account_type"}, "path": null}, "rationale": "Select the requested sub-account product.", "seq": 23, "elapsed_ms": 1979, "event": "step_started"}
+{"step_id": "step_05", "by": "automation", "seq": 24, "elapsed_ms": 2125, "event": "step_completed"}
+{"step_id": "step_06", "action": {"kind": "fill", "target": {"frame_path": ["workspace"], "candidates": [{"by": "row", "name": "Account name", "role": null, "control": "input"}]}, "value": {"source": "input", "value": "nickname"}, "path": null}, "rationale": "Enter the requested account name before reviewing the request.", "seq": 25, "elapsed_ms": 2126, "event": "step_started"}
+{"step_id": "step_06", "by": "automation", "seq": 26, "elapsed_ms": 2263, "event": "step_completed"}
+{"step_id": "step_07", "action": {"kind": "click", "target": {"frame_path": ["workspace"], "candidates": [{"by": "role", "name": "Review request", "role": "button", "control": "button"}]}, "value": null, "path": null}, "rationale": "Submit the completed sub-account details for review without creating the account.", "seq": 27, "elapsed_ms": 2263, "event": "step_started"}
+{"step_id": "step_07", "by": "automation", "seq": 28, "elapsed_ms": 2464, "event": "step_completed"}
+{"snapshot": "completed.json", "screenshot": "completed.png", "seq": 29, "elapsed_ms": 2716, "event": "evidence_saved"}
+{"status": "success", "code": "completed", "outputs": {"member_id": "[REDACTED]", "account_type": "money_market", "nickname": "[REDACTED]", "status": "ready_for_review"}, "step_id": "step_07", "expected": null, "observed": null, "evidence": "completed.png", "model_calls": 0, "recoveries": 0, "handoffs": 1, "workflow_elapsed_ms": 2136, "seq": 30, "elapsed_ms": 2716, "event": "run_finished"}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "run_id": "replay-20260919T211609-508a9655",
+  "test_driver": "ai_computer_use",
+  "tool": "Codex computer-use plugin",
+  "physical_human_operated": false,
+  "surface": "Relay operator console UI",
+  "capability_origin": "authored_offline_example",
+  "relay_replay_model_calls": 0,
+  "external_operator_used_llm": true,
+  "handoff_assertions": "passed",
+  "steps_completed": 8,
+  "handoffs": 1,
+  "session_id": "55e35a3907b14a63a71861d4716cee1b",
+  "events_sha256": "aad466fc6e7712c648e72d22874d7550bccff9f51ddf638c4e27eca3bbe512c5",
+  "result_sha256": "fb2d69d64dd448c66564abf4f6e55678f560fbf0b4eb62f32eea1ea8f3dfbd57",
+  "known_issue": "run_finished elapsed_ms uses a different clock origin from preceding journal events",
+  "proves_genuine_llm_discovery": false
+}

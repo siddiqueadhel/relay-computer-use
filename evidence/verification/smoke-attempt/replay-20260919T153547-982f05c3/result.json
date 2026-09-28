@@ -1,0 +1,14 @@
+{
+  "run_id": "replay-20260919T153547-982f05c3",
+  "status": "failure",
+  "code": "browser_start_failed",
+  "outputs": {},
+  "step_id": null,
+  "expected": null,
+  "observed": null,
+  "evidence": "runtime-error.json",
+  "model_calls": 0,
+  "recoveries": 0,
+  "handoffs": 0,
+  "elapsed_ms": 2571
+}

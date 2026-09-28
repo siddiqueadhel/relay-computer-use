@@ -1,0 +1,43 @@
+{
+  "frames": [
+    {
+      "headings": [],
+      "controls": [],
+      "text": "N\nNorthstar\nCREDIT UNION\nOperations workspace\nSYNTHETIC DEMO\nWORKSPACE\nMember services\n01\nAccount servicing\nActivity journal\nStaff session active\nSandbox \u00b7 no real accounts\nOperations\n/\nMember services",
+      "frame_path": [],
+      "path": "/"
+    },
+    {
+      "headings": [
+        {
+          "level": 1,
+          "text": "Member not found"
+        }
+      ],
+      "controls": [
+        {
+          "name": "Return to search",
+          "role": "link",
+          "options": null,
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "role": "link",
+                "name": "Return to search"
+              }
+            ]
+          }
+        }
+      ],
+      "text": "MEMBER SERVICES / WORKSPACE\nMember not found\nNo matching member exists.\nReturn to search\nSynthetic demonstration data \u00b7 Northstar Core 1.0",
+      "frame_path": [
+        "workspace"
+      ],
+      "path": "/search"
+    }
+  ]
+}

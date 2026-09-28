@@ -1,0 +1,19 @@
+{
+  "run_id": "replay-20260920T022707-0aae2add",
+  "status": "success",
+  "code": "completed",
+  "outputs": {
+    "member_id": "[REDACTED]",
+    "account_type": "money_market",
+    "nickname": "[REDACTED]",
+    "status": "ready_for_review"
+  },
+  "step_id": "step_07",
+  "expected": null,
+  "observed": null,
+  "evidence": "completed.png",
+  "model_calls": 0,
+  "recoveries": 1,
+  "handoffs": 0,
+  "elapsed_ms": 1165
+}

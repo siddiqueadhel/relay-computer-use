@@ -1,0 +1,10 @@
+{
+  "run_id": "replay-20260920T024943-b43e21a4",
+  "test_driver": "ai_computer_use",
+  "physical_human_operated": false,
+  "events_sha256": "7a161470f0648dec3eaecb77aac165866c5d65b4de40492dae0cfcc0b01a7b7f",
+  "result_sha256": "dfa9aca37c6037ff32de2b09e9cec5077653523d5d77011923904c008db50dec",
+  "session_id": "411303e08831490295bb2a5e994e146a",
+  "method": "Codex computer-use plugin operated the visible operator console: selected Expired staff session, ran replay, claimed control, clicked Resume staff session, returned control, and observed success with eight verified steps.",
+  "limitations": "This tests the real operator UI and control-transfer mechanism using an AI-operated browser. It is not a physical-person demonstration or independent authenticity attestation. The fixture and all data are synthetic. Raw event and result files are unchanged."
+}

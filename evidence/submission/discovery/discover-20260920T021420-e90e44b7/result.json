@@ -1,0 +1,14 @@
+{
+  "run_id": "discover-20260920T021420-e90e44b7",
+  "status": "failure",
+  "code": "premature_model_completion",
+  "outputs": {},
+  "step_id": null,
+  "expected": null,
+  "observed": null,
+  "evidence": "stopped.png",
+  "model_calls": 8,
+  "recoveries": 0,
+  "handoffs": 0,
+  "elapsed_ms": 20830
+}

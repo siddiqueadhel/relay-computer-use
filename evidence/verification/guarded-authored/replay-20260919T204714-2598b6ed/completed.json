@@ -1,0 +1,60 @@
+{
+  "frames": [
+    {
+      "headings": [],
+      "controls": [],
+      "text": "N\nNorthstar\nCREDIT UNION\nOperations workspace\nSYNTHETIC DEMO\nWORKSPACE\nMember services\n01\nAccount servicing\nActivity journal\nStaff session active\nSandbox \u00b7 no real accounts\nOperations\n/\nMember services",
+      "frame_path": [],
+      "path": "/"
+    },
+    {
+      "headings": [
+        {
+          "level": 1,
+          "text": "Review request"
+        }
+      ],
+      "controls": [
+        {
+          "name": "Edit request",
+          "role": "link",
+          "options": null,
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "role": "link",
+                "name": "Edit request"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Create account",
+          "role": "button",
+          "options": null,
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "role": "button",
+                "name": "Create account"
+              }
+            ]
+          }
+        }
+      ],
+      "text": "MEMBER SERVICES / WORKSPACE\nReview request\nReview the prepared request. No account has been created.\nC\nMember\n\u00b7 Active relationship\nVERIFIED\nREQUEST SUMMARY\nMember number\nProduct\nsavings\nAccount name\nRequest status\nready_for_review\ni\nThis is the automation stopping point.\n        Final account creation is outside its permitted actions.\nEdit request\nCreate account\nSynthetic demonstration data \u00b7 Northstar Core 1.0",
+      "frame_path": [
+        "workspace"
+      ],
+      "path": "/review"
+    }
+  ]
+}

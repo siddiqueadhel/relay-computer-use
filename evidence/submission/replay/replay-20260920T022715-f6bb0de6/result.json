@@ -1,0 +1,14 @@
+{
+  "run_id": "replay-20260920T022715-f6bb0de6",
+  "status": "failure",
+  "code": "ambiguous_target",
+  "outputs": {},
+  "step_id": "step_02",
+  "expected": "[{\"kind\": \"visible\", \"target\": {\"frame_path\": [\"workspace\"], \"candidates\": [{\"by\": \"role\", \"name\": \"Search results\", \"role\": \"heading\", \"control\": null}]}, \"expected\": null}]",
+  "observed": "Find a member",
+  "evidence": "stopped.png",
+  "model_calls": 0,
+  "recoveries": 0,
+  "handoffs": 0,
+  "elapsed_ms": 503
+}

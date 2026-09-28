@@ -1,0 +1,14 @@
+{
+  "run_id": "discover-20260919T204257-49affa9f",
+  "status": "failure",
+  "code": "model_rate_limited",
+  "outputs": {},
+  "step_id": null,
+  "expected": null,
+  "observed": null,
+  "evidence": "stopped.png",
+  "model_calls": 1,
+  "recoveries": 0,
+  "handoffs": 0,
+  "elapsed_ms": 10049
+}

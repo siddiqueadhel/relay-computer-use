@@ -1,0 +1,31 @@
+{"seq": 0, "elapsed_ms": 0, "event": "run_started", "mode": "replay", "evidence_policy": "redacted; no raw model transcript"}
+{"seq": 1, "elapsed_ms": 565, "event": "session_started", "session_id": "f9bba6f472c44a79af63f392f097065e", "surface": "playwright_chromium", "viewport": "1360x960"}
+{"seq": 2, "elapsed_ms": 566, "event": "capability_loaded", "name": "prepare_subaccount", "version": "1.0.0", "sha256": "77438789bf04e1ff4b9eb2bbdd403facd131bfc9b5b4dab24328fbe8e50d969b", "schema_version": "1.0", "input_fields": ["account_type", "member_id", "nickname"], "model_calls": 0}
+{"seq": 3, "elapsed_ms": 567, "event": "step_started", "step_id": "step_00", "action": {"kind": "navigate", "target": null, "value": null, "path": "/"}, "rationale": "Open the configured app."}
+{"seq": 4, "elapsed_ms": 688, "event": "step_completed", "step_id": "step_00", "by": "automation"}
+{"seq": 5, "elapsed_ms": 688, "event": "step_started", "step_id": "step_01", "action": {"kind": "fill", "target": {"frame_path": ["workspace"], "candidates": [{"by": "role", "name": "Member number", "role": "textbox", "control": null}]}, "value": {"source": "input", "value": "member_id"}, "path": null}, "rationale": "Bind the member parameter."}
+{"seq": 6, "elapsed_ms": 798, "event": "step_completed", "step_id": "step_01", "by": "automation"}
+{"seq": 7, "elapsed_ms": 798, "event": "step_started", "step_id": "step_02", "action": {"kind": "click", "target": {"frame_path": ["workspace"], "candidates": [{"by": "role", "name": "Search", "role": "button", "control": null}]}, "value": null, "path": null}, "rationale": "Find the requested relationship."}
+{"seq": 8, "elapsed_ms": 964, "event": "condition_detected", "step_id": "step_02", "code": "unexpected_dialog", "disposition": "intervene"}
+{"seq": 9, "elapsed_ms": 1063, "event": "evidence_saved", "snapshot": "intervention-1.json", "screenshot": "intervention-1.png"}
+{"seq": 10, "elapsed_ms": 1064, "event": "intervention_requested", "session_id": "f9bba6f472c44a79af63f392f097065e", "generation": 1, "reason": "unexpected_dialog", "step_id": "step_02", "expected": "Restore the interrupted step's before or after checkpoint.", "evidence": "intervention-1.png"}
+{"seq": 11, "elapsed_ms": 1064, "event": "operator_simulation", "note": "Automated test driver, not a real human."}
+{"seq": 12, "elapsed_ms": 1064, "event": "control_transferred", "owner": "human", "session_id": "f9bba6f472c44a79af63f392f097065e", "generation": 1}
+{"seq": 13, "elapsed_ms": 1135, "event": "human_action", "session_id": "f9bba6f472c44a79af63f392f097065e", "generation": 1, "kind": "click", "origin": "browser_event", "control": "Dismiss supervisor notice", "values": "not recorded"}
+{"seq": 14, "elapsed_ms": 1137, "event": "human_action", "session_id": "f9bba6f472c44a79af63f392f097065e", "generation": 1, "kind": "click", "control": "Dismiss supervisor notice", "origin": "operator_command", "values": "not recorded"}
+{"seq": 15, "elapsed_ms": 1137, "event": "control_transferred", "owner": "automation", "session_id": "f9bba6f472c44a79af63f392f097065e", "generation": 1}
+{"seq": 16, "elapsed_ms": 1210, "event": "evidence_saved", "snapshot": "resumed-1.json", "screenshot": "resumed-1.png"}
+{"seq": 17, "elapsed_ms": 1215, "event": "resume_verified", "step_id": "step_02", "checkpoint": "after"}
+{"seq": 18, "elapsed_ms": 1220, "event": "step_completed", "step_id": "step_02", "by": "operator"}
+{"seq": 19, "elapsed_ms": 1221, "event": "step_started", "step_id": "step_03", "action": {"kind": "click", "target": {"frame_path": ["workspace"], "candidates": [{"by": "role", "name": "Open member", "role": "link", "control": null}]}, "value": null, "path": null}, "rationale": "Open the uniquely matched member."}
+{"seq": 20, "elapsed_ms": 1334, "event": "step_completed", "step_id": "step_03", "by": "automation"}
+{"seq": 21, "elapsed_ms": 1335, "event": "step_started", "step_id": "step_04", "action": {"kind": "click", "target": {"frame_path": ["workspace"], "candidates": [{"by": "role", "name": "Add sub-account", "role": "link", "control": null}]}, "value": null, "path": null}, "rationale": "Start a reversible preparation form."}
+{"seq": 22, "elapsed_ms": 1453, "event": "step_completed", "step_id": "step_04", "by": "automation"}
+{"seq": 23, "elapsed_ms": 1453, "event": "step_started", "step_id": "step_05", "action": {"kind": "select", "target": {"frame_path": ["workspace"], "candidates": [{"by": "row", "name": "Account type", "role": null, "control": "select"}]}, "value": {"source": "input", "value": "account_type"}, "path": null}, "rationale": "Select the supplied product code."}
+{"seq": 24, "elapsed_ms": 1533, "event": "step_completed", "step_id": "step_05", "by": "automation"}
+{"seq": 25, "elapsed_ms": 1534, "event": "step_started", "step_id": "step_06", "action": {"kind": "fill", "target": {"frame_path": ["workspace"], "candidates": [{"by": "row", "name": "Account name", "role": null, "control": "input"}]}, "value": {"source": "input", "value": "nickname"}, "path": null}, "rationale": "Bind the supplied account name."}
+{"seq": 26, "elapsed_ms": 1591, "event": "step_completed", "step_id": "step_06", "by": "automation"}
+{"seq": 27, "elapsed_ms": 1591, "event": "step_started", "step_id": "step_07", "action": {"kind": "click", "target": {"frame_path": ["workspace"], "candidates": [{"by": "role", "name": "Review request", "role": "button", "control": null}]}, "value": null, "path": null}, "rationale": "Reach review without committing an account."}
+{"seq": 28, "elapsed_ms": 1687, "event": "step_completed", "step_id": "step_07", "by": "automation"}
+{"seq": 29, "elapsed_ms": 1844, "event": "evidence_saved", "snapshot": "completed.json", "screenshot": "completed.png"}
+{"seq": 30, "elapsed_ms": 1278, "event": "run_finished", "status": "success", "code": "completed", "outputs": {"member_id": "[REDACTED]", "account_type": "money_market", "nickname": "[REDACTED]", "status": "ready_for_review"}, "step_id": "step_07", "expected": null, "observed": null, "evidence": "completed.png", "model_calls": 0, "recoveries": 0, "handoffs": 1}

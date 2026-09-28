@@ -1,0 +1,11 @@
+# Submission steps
+
+**September 21 update:** the gateway-console key-check bug is fixed; all **118 tests passed**, including 16 new regressions. Genuine discovery/replay evidence is unchanged. The user's manual handoff is attributed on their report and checked against its log; the 88 current screenshots were reviewed through their 20 distinct hashes. See `evidence/submission/REVIEW.md`. Final publication approval and submission are still pending.
+
+1. **Private API access — verified.** The ignored local `.env` holds `EXPLABS_API_KEY`; the gateway returned real model decisions. Never publish this file or paste it into chat. Replay needs no key.
+2. **Genuine discovery — complete.** `discover-20260920T021923-38965d88` succeeded with seven `gpt-5.6-luna` calls. Artifact: `evidence/submission/prepare_subaccount.json`. Earlier failed attempts remain labeled as failures.
+3. **Replay and errors — verified for this fixture.** All 31 guarded checks passed on that artifact, including 20 varied-input repetitions and 11 exceptional-state/variant cases. Zero model calls and zero irreversible commits.
+4. **Live handoff — verified.** The AI-operated run `replay-20260920T024943-b43e21a4` and user-reported person-operated run `replay-20260920T030051-f8c6611b` both completed eight steps with one same-session handoff and zero model calls. Attribution is recorded separately; another manual run is not necessary for this evidence.
+5. **Tests and clean setup — passed within stated scope.** Latest full suite: 118 passed in 139.58 seconds (`evidence/verification/console-provider-fix.xml`). An earlier secret-free source copy installed from `uv.lock` into a new environment passed 102 tests in 162.16 seconds (`gateway-clean-setup.xml`); that predates the fix and 16 new tests. Both used this Mac/browser host, not a second machine. `uv run python scripts/check_submission.py` checks evidence consistency, not hiring readiness.
+6. **Final review — pending.** Rehearse the README demo, review selected public files/screenshots, and be ready to defend schema, errors, waits, privacy limits, and ownership. Read `REPORT.md` and `evidence/README.md`. Another-machine setup remains a useful optional check.
+7. **Publish and submit — separate approval required.** No public remote or submission email was created. Never include `.env`.

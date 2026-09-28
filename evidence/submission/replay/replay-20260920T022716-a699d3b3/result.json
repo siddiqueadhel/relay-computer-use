@@ -1,0 +1,14 @@
+{
+  "run_id": "replay-20260920T022716-a699d3b3",
+  "status": "failure",
+  "code": "origin_denied",
+  "outputs": {},
+  "step_id": "step_02",
+  "expected": "[{\"kind\": \"visible\", \"target\": {\"frame_path\": [\"workspace\"], \"candidates\": [{\"by\": \"role\", \"name\": \"Search results\", \"role\": \"heading\", \"control\": null}]}, \"expected\": null}]",
+  "observed": "Observation restricted by policy or browser state",
+  "evidence": "stopped.json",
+  "model_calls": 0,
+  "recoveries": 0,
+  "handoffs": 0,
+  "elapsed_ms": 671
+}

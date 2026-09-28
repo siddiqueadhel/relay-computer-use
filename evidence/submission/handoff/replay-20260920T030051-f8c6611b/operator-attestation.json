@@ -1,0 +1,13 @@
+{
+  "run_id": "replay-20260920T030051-f8c6611b",
+  "test_driver": "physical_human",
+  "physical_human_operated": true,
+  "attribution_basis": "The user reported completing the instructed manual handoff in this conversation. The saved console log independently confirms the control-transfer sequence, but does not independently establish physical identity.",
+  "recorded_by": "coding_assistant",
+  "review_date": "2026-09-21",
+  "events_sha256": "72049cb181fee7bcbdb50d3f7a1a918f882694163884f5b07a966b434f87448d",
+  "result_sha256": "beff960855d8904480e96b85c5aa8eaa98d9595d8b7fa12a441a49eb6bc726d1",
+  "session_id": "7172dec044044397ab19ee745d631b40",
+  "method": "Expired staff session; Take control; Resume staff session; Return control & resume. The same session and generation are preserved; the interrupted postcondition was verified; eight steps completed with one handoff and zero model calls.",
+  "limitations": "User-reported person-operated demonstration, not independent identity verification. Synthetic application/data only. Original event and result files are unchanged."
+}

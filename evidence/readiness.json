@@ -1,0 +1,39 @@
+{
+  "automated_checks_passed": true,
+  "checks": [
+    {
+      "check": "required_report_headings",
+      "passed": true
+    },
+    {
+      "check": "successful_live_discovery_with_matching_receipts_and_digest",
+      "passed": true
+    },
+    {
+      "check": "guarded_replay_of_that_discovered_artifact",
+      "passed": true
+    },
+    {
+      "check": "attributed_live_console_handoff_on_that_artifact",
+      "passed": true
+    },
+    {
+      "check": "latest_full_test_report_passed",
+      "passed": true
+    },
+    {
+      "check": "private_env_is_git_ignored",
+      "passed": true
+    },
+    {
+      "check": "no_recognized_api_key_patterns_in_git_candidates",
+      "passed": true
+    }
+  ],
+  "manual_review_still_required": [
+    "Screenshot privacy",
+    "Fresh-checkout setup",
+    "Evidence authenticity and limitations",
+    "Explicit approval before publication or email"
+  ]
+}

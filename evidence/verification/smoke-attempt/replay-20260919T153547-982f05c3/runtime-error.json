@@ -1,0 +1,35 @@
+{
+  "exception_type": "TargetClosedError",
+  "frames": [
+    {
+      "file": "runtime.py",
+      "function": "_execute",
+      "line": 112
+    },
+    {
+      "file": "surface.py",
+      "function": "__aenter__",
+      "line": 130
+    },
+    {
+      "file": "_generated.py",
+      "function": "launch",
+      "line": 16851
+    },
+    {
+      "file": "_browser_type.py",
+      "function": "launch",
+      "line": 101
+    },
+    {
+      "file": "_connection.py",
+      "function": "send",
+      "line": 76
+    },
+    {
+      "file": "_connection.py",
+      "function": "wrap_api_call",
+      "line": 632
+    }
+  ]
+}

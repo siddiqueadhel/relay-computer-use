@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="5.907" timestamp="2026-09-19T15:35:15.264313-07:00" hostname="Adhels-MacBook.local"><testcase classname="tests.test_browser" name="test_real_ui_outcomes[normal-changes0-success-completed]" time="5.676"><failure message="AssertionError: assert ('failure', '...start_failed') == ('success', 'completed')&#10;  &#10;  At index 0 diff: 'failure' != 'success'&#10;  Use -v to get more diff">manager = &lt;relay.runtime.RunManager object at 0x10aadb7d0&gt;
+bank = (&lt;fastapi.applications.FastAPI object at 0x10a864320&gt;, 'http://127.0.0.1:65448')
+scenario = 'normal', changes = {}, status = 'success', code = 'completed'
+
+    @pytest.mark.parametrize(
+        "scenario,changes,status,code",
+        [
+            ("normal", {}, "success", "completed"),
+            ("normal", {"member_id": "99999"}, "business_outcome", "member_not_found"),
+            ("normal", {"nickname": "BLOCKED"}, "business_outcome", "validation_error"),
+            ("slow", {}, "success", "completed"),
+            ("permission_denied", {}, "failure", "permission_denied"),
+            ("known_dialog", {}, "success", "completed"),
+            ("app_error", {}, "failure", "app_unavailable"),
+            ("ambiguous", {}, "failure", "ambiguous_target"),
+            ("redirect_escape", {}, "failure", "origin_denied"),
+        ],
+    )
+    async def test_real_ui_outcomes(manager, bank, scenario, changes, status, code):
+        result = await manager.start({**INPUTS, **changes}, scenario=scenario)
+&gt;       assert (result.status, result.code) == (status, code)
+E       AssertionError: assert ('failure', '...start_failed') == ('success', 'completed')
+E         
+E         At index 0 diff: 'failure' != 'success'
+E         Use -v to get more diff
+
+tests/test_browser.py:32: AssertionError</failure></testcase></testsuite></testsuites>

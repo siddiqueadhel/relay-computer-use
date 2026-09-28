@@ -1,0 +1,868 @@
+{
+  "schema_version": "1.0",
+  "version": "1.0.0",
+  "vendor": "northstar-core",
+  "app_version": "1.x",
+  "contract": {
+    "name": "prepare_subaccount",
+    "description": "Prepare a savings or money-market sub-account for a member and stop at review; never create an account.",
+    "inputs": {
+      "member_id": {
+        "type": "string",
+        "description": "Member number",
+        "sensitive": true,
+        "enum": [],
+        "pattern": "\\d{5}",
+        "max_length": 5
+      },
+      "account_type": {
+        "type": "string",
+        "description": "Product code",
+        "sensitive": false,
+        "enum": [
+          "savings",
+          "money_market"
+        ],
+        "pattern": null,
+        "max_length": 200
+      },
+      "nickname": {
+        "type": "string",
+        "description": "Account name",
+        "sensitive": true,
+        "enum": [],
+        "pattern": null,
+        "max_length": 40
+      }
+    },
+    "outputs": {
+      "member_id": {
+        "spec": {
+          "type": "string",
+          "description": "Verified member",
+          "sensitive": true,
+          "enum": [],
+          "pattern": null,
+          "max_length": 200
+        },
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "row",
+              "name": "Member number",
+              "role": null,
+              "control": "value"
+            }
+          ]
+        },
+        "equals_input": "member_id"
+      },
+      "account_type": {
+        "spec": {
+          "type": "string",
+          "description": "Requested product",
+          "sensitive": false,
+          "enum": [],
+          "pattern": null,
+          "max_length": 200
+        },
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "row",
+              "name": "Product",
+              "role": null,
+              "control": "value"
+            }
+          ]
+        },
+        "equals_input": "account_type"
+      },
+      "nickname": {
+        "spec": {
+          "type": "string",
+          "description": "Requested account name",
+          "sensitive": true,
+          "enum": [],
+          "pattern": null,
+          "max_length": 200
+        },
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "row",
+              "name": "Account name",
+              "role": null,
+              "control": "value"
+            }
+          ]
+        },
+        "equals_input": "nickname"
+      },
+      "status": {
+        "spec": {
+          "type": "string",
+          "description": "Request state",
+          "sensitive": false,
+          "enum": [
+            "ready_for_review"
+          ],
+          "pattern": null,
+          "max_length": 200
+        },
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "row",
+              "name": "Request status",
+              "role": null,
+              "control": "value"
+            }
+          ]
+        },
+        "equals_input": null
+      }
+    },
+    "success": [
+      {
+        "kind": "visible",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Review request",
+              "role": "heading",
+              "control": null
+            }
+          ]
+        },
+        "expected": null
+      },
+      {
+        "kind": "text_equals",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "row",
+              "name": "Request status",
+              "role": null,
+              "control": "value"
+            }
+          ]
+        },
+        "expected": {
+          "source": "literal",
+          "value": "ready_for_review"
+        }
+      }
+    ]
+  },
+  "steps": [
+    {
+      "id": "step_00",
+      "action": {
+        "kind": "navigate",
+        "target": null,
+        "value": null,
+        "path": "/"
+      },
+      "before": [],
+      "after": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Find a member",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "rationale": "Open the configured application entry point.",
+      "timeout_ms": 5000
+    },
+    {
+      "id": "step_01",
+      "action": {
+        "kind": "fill",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "label",
+              "name": "Member number",
+              "role": null,
+              "control": "input"
+            }
+          ]
+        },
+        "value": {
+          "source": "input",
+          "value": "member_id"
+        },
+        "path": null
+      },
+      "before": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Find a member",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "after": [
+        {
+          "kind": "value_equals",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "label",
+                "name": "Member number",
+                "role": null,
+                "control": "input"
+              }
+            ]
+          },
+          "expected": {
+            "source": "input",
+            "value": "member_id"
+          }
+        }
+      ],
+      "rationale": "Enter the supplied member number to begin the member lookup.",
+      "timeout_ms": 5000
+    },
+    {
+      "id": "step_02",
+      "action": {
+        "kind": "click",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Search",
+              "role": "button",
+              "control": "button"
+            }
+          ]
+        },
+        "value": null,
+        "path": null
+      },
+      "before": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Find a member",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "after": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Search results",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "rationale": "Search for the supplied member.",
+      "timeout_ms": 5000
+    },
+    {
+      "id": "step_03",
+      "action": {
+        "kind": "click",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Open member",
+              "role": "link",
+              "control": null
+            }
+          ]
+        },
+        "value": null,
+        "path": null
+      },
+      "before": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Search results",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "after": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Member overview",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "rationale": "Open the single matching member result.",
+      "timeout_ms": 5000
+    },
+    {
+      "id": "step_04",
+      "action": {
+        "kind": "click",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Add sub-account",
+              "role": "link",
+              "control": null
+            }
+          ]
+        },
+        "value": null,
+        "path": null
+      },
+      "before": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Member overview",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "after": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Prepare sub-account",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "rationale": "Open the sub-account preparation form for the verified member.",
+      "timeout_ms": 5000
+    },
+    {
+      "id": "step_05",
+      "action": {
+        "kind": "select",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "row",
+              "name": "Account type",
+              "role": null,
+              "control": "select"
+            }
+          ]
+        },
+        "value": {
+          "source": "input",
+          "value": "account_type"
+        },
+        "path": null
+      },
+      "before": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Prepare sub-account",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "after": [
+        {
+          "kind": "value_equals",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "row",
+                "name": "Account type",
+                "role": null,
+                "control": "select"
+              }
+            ]
+          },
+          "expected": {
+            "source": "input",
+            "value": "account_type"
+          }
+        }
+      ],
+      "rationale": "Select the requested sub-account product.",
+      "timeout_ms": 5000
+    },
+    {
+      "id": "step_06",
+      "action": {
+        "kind": "fill",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "row",
+              "name": "Account name",
+              "role": null,
+              "control": "input"
+            }
+          ]
+        },
+        "value": {
+          "source": "input",
+          "value": "nickname"
+        },
+        "path": null
+      },
+      "before": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Prepare sub-account",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "after": [
+        {
+          "kind": "value_equals",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "row",
+                "name": "Account name",
+                "role": null,
+                "control": "input"
+              }
+            ]
+          },
+          "expected": {
+            "source": "input",
+            "value": "nickname"
+          }
+        }
+      ],
+      "rationale": "Enter the requested account name before reviewing the request.",
+      "timeout_ms": 5000
+    },
+    {
+      "id": "step_07",
+      "action": {
+        "kind": "click",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Review request",
+              "role": "button",
+              "control": "button"
+            }
+          ]
+        },
+        "value": null,
+        "path": null
+      },
+      "before": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Prepare sub-account",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "after": [
+        {
+          "kind": "visible",
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "name": "Review request",
+                "role": "heading",
+                "control": null
+              }
+            ]
+          },
+          "expected": null
+        }
+      ],
+      "rationale": "Submit the completed sub-account details for review without creating the account.",
+      "timeout_ms": 5000
+    }
+  ],
+  "outcomes": [
+    {
+      "code": "member_not_found",
+      "when": {
+        "kind": "visible",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Member not found",
+              "role": "heading",
+              "control": null
+            }
+          ]
+        },
+        "expected": null
+      },
+      "disposition": "business",
+      "recovery": null,
+      "max_attempts": 1
+    },
+    {
+      "code": "validation_error",
+      "when": {
+        "kind": "visible",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Validation error",
+              "role": "heading",
+              "control": null
+            }
+          ]
+        },
+        "expected": null
+      },
+      "disposition": "business",
+      "recovery": null,
+      "max_attempts": 1
+    },
+    {
+      "code": "permission_denied",
+      "when": {
+        "kind": "visible",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Access denied",
+              "role": "heading",
+              "control": null
+            }
+          ]
+        },
+        "expected": null
+      },
+      "disposition": "fail",
+      "recovery": null,
+      "max_attempts": 1
+    },
+    {
+      "code": "app_unavailable",
+      "when": {
+        "kind": "visible",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Service unavailable",
+              "role": "heading",
+              "control": null
+            }
+          ]
+        },
+        "expected": null
+      },
+      "disposition": "fail",
+      "recovery": null,
+      "max_attempts": 1
+    },
+    {
+      "code": "session_expired",
+      "when": {
+        "kind": "visible",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Staff session expired",
+              "role": "heading",
+              "control": null
+            }
+          ]
+        },
+        "expected": null
+      },
+      "disposition": "intervene",
+      "recovery": null,
+      "max_attempts": 1
+    },
+    {
+      "code": "session_lost",
+      "when": {
+        "kind": "visible",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Session expired",
+              "role": "heading",
+              "control": null
+            }
+          ]
+        },
+        "expected": null
+      },
+      "disposition": "intervene",
+      "recovery": null,
+      "max_attempts": 1
+    },
+    {
+      "code": "unexpected_dialog",
+      "when": {
+        "kind": "visible",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Supervisor review required",
+              "role": "heading",
+              "control": null
+            }
+          ]
+        },
+        "expected": null
+      },
+      "disposition": "intervene",
+      "recovery": null,
+      "max_attempts": 1
+    },
+    {
+      "code": "service_notice",
+      "when": {
+        "kind": "visible",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Service notice",
+              "role": "heading",
+              "control": null
+            }
+          ]
+        },
+        "expected": null
+      },
+      "disposition": "recover",
+      "recovery": {
+        "kind": "click",
+        "target": {
+          "frame_path": [
+            "workspace"
+          ],
+          "candidates": [
+            {
+              "by": "role",
+              "name": "Acknowledge message",
+              "role": "button",
+              "control": null
+            }
+          ]
+        },
+        "value": null,
+        "path": null
+      },
+      "max_attempts": 1
+    }
+  ],
+  "provenance": {
+    "kind": "llm_discovery",
+    "provider": "experiential_responses",
+    "model": "gpt-5.6-luna",
+    "run_id": "discover-20260920T021923-38965d88",
+    "model_calls": 7,
+    "evidence_sha256": "78650fd6af2901bb76bbd164db34a9b389fdd97daf18a2c85a066ee629169508",
+    "evidence_event_count": 32
+  }
+}

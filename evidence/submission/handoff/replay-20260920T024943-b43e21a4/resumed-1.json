@@ -1,0 +1,107 @@
+{
+  "frames": [
+    {
+      "headings": [],
+      "controls": [],
+      "text": "N\nNorthstar\nCREDIT UNION\nOperations workspace\nSYNTHETIC DEMO\nWORKSPACE\nMember services\n01\nAccount servicing\nActivity journal\nStaff session active\nSandbox \u00b7 no real accounts\nOperations\n/\nMember services",
+      "frame_path": [],
+      "path": "/"
+    },
+    {
+      "headings": [
+        {
+          "level": 1,
+          "text": "Prepare sub-account"
+        }
+      ],
+      "controls": [
+        {
+          "name": "Account type",
+          "role": "combobox",
+          "options": [
+            {
+              "label": "Choose a product",
+              "value": ""
+            },
+            {
+              "label": "Savings",
+              "value": "savings"
+            },
+            {
+              "label": "Money market",
+              "value": "money_market"
+            }
+          ],
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "row",
+                "name": "Account type",
+                "control": "select"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Account name",
+          "role": "textbox",
+          "options": null,
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "row",
+                "name": "Account name",
+                "control": "input"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Back to member",
+          "role": "link",
+          "options": null,
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "role": "link",
+                "name": "Back to member"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Review request",
+          "role": "button",
+          "options": null,
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "role": "button",
+                "name": "Review request"
+              }
+            ]
+          }
+        }
+      ],
+      "text": "MEMBER SERVICES / WORKSPACE\nPrepare sub-account\nC\nMember\n\u00b7 Active relationship\nVERIFIED\nChoose the product and a name. You can review everything before any account is created.\nACCOUNT DETAILS\nAccount type\nAccount name\nBack to member\nReview request\nSynthetic demonstration data \u00b7 Northstar Core 1.0",
+      "frame_path": [
+        "workspace"
+      ],
+      "path": "/restore"
+    }
+  ]
+}

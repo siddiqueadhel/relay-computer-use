@@ -1,0 +1,8 @@
+{
+  "paths": ["/", "/workspace", "/search", "/member", "/subaccount", "/review", "/restore", "/bank.css", "/favicon.ico"],
+  "actions": ["navigate", "click", "fill", "select"],
+  "clicks": ["Search", "Open member", "Add sub-account", "Review request", "Back to member", "Edit request", "Return to search", "Acknowledge message"],
+  "human_clicks": ["Resume staff session", "Dismiss supervisor notice"],
+  "fields": ["Member number", "Account type", "Account name"],
+  "private_selectors": ["[data-private]", "[data-sensitive]", "input", "textarea", "[contenteditable=true]"]
+}

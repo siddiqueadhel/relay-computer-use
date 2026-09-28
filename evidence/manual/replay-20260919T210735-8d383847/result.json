@@ -1,0 +1,14 @@
+{
+  "run_id": "replay-20260919T210735-8d383847",
+  "status": "business_outcome",
+  "code": "validation_error",
+  "outputs": {},
+  "step_id": "step_07",
+  "expected": "[{\"kind\": \"visible\", \"target\": {\"frame_path\": [\"workspace\"], \"candidates\": [{\"by\": \"role\", \"name\": \"Review request\", \"role\": \"heading\", \"control\": null}]}, \"expected\": null}]",
+  "observed": "Validation error",
+  "evidence": "stopped.png",
+  "model_calls": 0,
+  "recoveries": 0,
+  "handoffs": 0,
+  "elapsed_ms": 2494
+}

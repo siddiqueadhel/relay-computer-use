@@ -1,0 +1,19 @@
+{
+  "run_id": "discover-20260920T021923-38965d88",
+  "status": "success",
+  "code": "completed",
+  "outputs": {
+    "member_id": "[REDACTED]",
+    "account_type": "savings",
+    "nickname": "[REDACTED]",
+    "status": "ready_for_review"
+  },
+  "step_id": null,
+  "expected": null,
+  "observed": null,
+  "evidence": "completed.png",
+  "model_calls": 7,
+  "recoveries": 0,
+  "handoffs": 0,
+  "elapsed_ms": 14708
+}

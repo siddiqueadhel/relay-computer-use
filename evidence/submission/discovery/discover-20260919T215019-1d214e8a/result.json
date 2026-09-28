@@ -1,0 +1,14 @@
+{
+  "run_id": "discover-20260919T215019-1d214e8a",
+  "status": "failure",
+  "code": "discovery_error",
+  "outputs": {},
+  "step_id": null,
+  "expected": null,
+  "observed": null,
+  "evidence": "stopped.png",
+  "model_calls": 2,
+  "recoveries": 0,
+  "handoffs": 0,
+  "elapsed_ms": 10079
+}

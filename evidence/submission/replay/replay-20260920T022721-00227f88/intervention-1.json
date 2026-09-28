@@ -1,0 +1,64 @@
+{
+  "frames": [
+    {
+      "headings": [],
+      "controls": [],
+      "text": "N\nNorthstar\nCREDIT UNION\nOperations workspace\nSYNTHETIC DEMO\nWORKSPACE\nMember services\n01\nAccount servicing\nActivity journal\nStaff session active\nSandbox \u00b7 no real accounts\nOperations\n/\nMember services",
+      "frame_path": [],
+      "path": "/"
+    },
+    {
+      "headings": [
+        {
+          "level": 1,
+          "text": "Search results"
+        },
+        {
+          "level": 2,
+          "text": "Supervisor review required"
+        }
+      ],
+      "controls": [
+        {
+          "name": "Dismiss supervisor notice",
+          "role": "button",
+          "options": null,
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "role": "button",
+                "name": "Dismiss supervisor notice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Open member",
+          "role": "link",
+          "options": null,
+          "target": {
+            "frame_path": [
+              "workspace"
+            ],
+            "candidates": [
+              {
+                "by": "role",
+                "role": "link",
+                "name": "Open member"
+              }
+            ]
+          }
+        }
+      ],
+      "text": "MEMBER SERVICES / WORKSPACE\nSearch results\nSupervisor review required\nA supervisor must review this session before it continues.\nDismiss supervisor notice\nOne matching relationship.\nMember\nNumber\nStatus\nAction\nActive\nOpen member\nSynthetic demonstration data \u00b7 Northstar Core 1.0",
+      "frame_path": [
+        "workspace"
+      ],
+      "path": "/search"
+    }
+  ]
+}

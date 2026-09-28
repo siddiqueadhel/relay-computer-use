@@ -1,0 +1,14 @@
+{
+  "run_id": "replay-20260919T204749-4b59d9ae",
+  "status": "failure",
+  "code": "permission_denied",
+  "outputs": {},
+  "step_id": "step_04",
+  "expected": "[{\"kind\": \"visible\", \"target\": {\"frame_path\": [\"workspace\"], \"candidates\": [{\"by\": \"role\", \"name\": \"Prepare sub-account\", \"role\": \"heading\", \"control\": null}]}, \"expected\": null}]",
+  "observed": "Access denied",
+  "evidence": "stopped.png",
+  "model_calls": 0,
+  "recoveries": 0,
+  "handoffs": 0,
+  "elapsed_ms": 652
+}

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "relay-computer-use"
+version = "0.1.0"
+description = "Discover once. Replay deliberately. A reviewable computer-use capability engine."
+requires-python = ">=3.11"
+dependencies = [
+  "playwright>=1.50,<2", "pydantic>=2.10,<3", "fastapi>=0.115,<1",
+  "uvicorn>=0.30,<1", "python-multipart>=0.0.20,<1", "openai>=1.66,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-asyncio>=0.25,<2", "httpx>=0.28,<1", "ruff>=0.11,<1"]
+
+[project.scripts]
+relay = "relay.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/relay"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = ["browser: real Chromium integration tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
